@@ -17,7 +17,7 @@ function draw() {
 function handleFile(file) {
   print(file);
   if (file.type === 'video') {    
-    localStorage.setItem('video',file.data);
+    localStorage.setItem('video',file);
     setTimeout(function () {
       window.location='2index.html';
     },5000);   
